@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color:  #f9fafc;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.head {
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+
+.oval {
+    color: #fff;
+    text-align: center;
+    border-radius: 25px;
+    background: #000;
+    padding: 5px;
+}
+
+.description {
+    padding-left: 10px;
+    border-left: solid #69696a;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(247, 193, 162, 0.7);
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+a {
+    padding-right: 10px;
+    text-decoration: none;
+    color: #69696a;
+}
+
+p {
+    color: #69696a;
+}
+
+
+@media only screen and (min-width: 768px ) {
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .head {
+        margin-right: 10px;
+    }
+
+    .description {
+        width: 50%;
+    }
+
+    main .oval {
+        width: 50%;
+    }
+
+    main {
+        display: flex;
+
+    }
+
+    .circles {
+        position: relative;
+        
+    }
+
+    .large-circle {
+        position: absolute;
+        right: 100px;
+        top: 50px;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        background:  rgba(247, 136, 167, 0.6);
+    }
+
+    .medium-circle {
+        position: absolute;
+        right: 30px;
+        top: 160px;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        background:  rgba(247, 193, 162, 0.7);
+    }
+
+    .small-circle {
+        position: absolute;
+        top: 80px;
+        right: 40px;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        background: rgba(207, 130, 213, 0.6);
+    }
+}
